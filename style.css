@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Demo styling */
+/* These styles are mainly for demo */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+}
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+footer {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.social-links-card * {
+    /* Defaults */
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+.social-links-card {
+    /* Color variables */
+    /* Primary */
+    --green: hsl(75, 94%, 57%);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+    box-sizing: border-box;
+    width: 325px;
+    height: 580px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile .picture {
+    width: 88px;
+    height: auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.profile img {
+    width: 100%;
+}
+.profile .name {
+    font-size: 1.75em;
+    margin-top: 1em;
+}
+.profile .location {
+    font-weight: 600;
+    color: var(--green);
+    margin-top: 0.5em;
+}
+.profile .excerpt {
+    margin-top: 2em;
+}
+.social-links-card .links {
+    list-style-type: none;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.links a {
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--grey);
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 1em
+}
+.links a:hover {
+    background-color: var(--green);
+    color: var(--dark-grey);
+}
+
+@media only screen and (min-width: 376px) {
+    .social-links-card {
+        width: 385px;
+    }
+}
